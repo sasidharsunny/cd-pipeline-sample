@@ -1,7 +1,6 @@
 pipeline:
   name: testk8s
   identifier: testk8s
-  projectIdentifier: default
   orgIdentifier: default
   tags: {}
   stages:
