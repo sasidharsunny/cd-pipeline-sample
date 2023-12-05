@@ -48,7 +48,7 @@ pipeline:
                     spec:
                       connectorRef: harnessdocker
                       imagePath: nginx
-                      tag: latest
+                      tag: alpine
                     type: DockerRegistry
               type: Kubernetes
           infrastructure:
