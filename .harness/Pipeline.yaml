@@ -12,10 +12,9 @@ pipeline:
         type: Deployment
         spec:
           serviceConfig:
-            serviceRef: k8service
+            serviceRef: nginx
             serviceDefinition:
               spec:
-                variables: []
                 manifests:
                   - manifest:
                       identifier: manifest
@@ -53,11 +52,11 @@ pipeline:
                     type: DockerRegistry
               type: Kubernetes
           infrastructure:
-            environmentRef: K8Env
+            environmentRef: deployenv
             infrastructureDefinition:
               type: KubernetesDirect
               spec:
-                connectorRef: test
+                connectorRef: kubernetesinfra
                 namespace: default
                 releaseName: release-<+INFRA_KEY>
             allowSimultaneousDeployments: false
