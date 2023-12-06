@@ -47,7 +47,7 @@ pipeline:
                   primary:
                     spec:
                       connectorRef: harnessdocker
-                      imagePath: library/nginx
+                      imagePath: ashokit/mavenwebapp
                       tag: latest
                     type: DockerRegistry
               type: Kubernetes
