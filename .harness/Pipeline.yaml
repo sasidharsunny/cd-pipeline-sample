@@ -47,8 +47,8 @@ pipeline:
                   primary:
                     spec:
                       connectorRef: harnessdocker
-                      imagePath: ashokit/mavenwebapp
-                      tag: latest
+                      imagePath: <+input>
+                      tag: <+input>
                     type: DockerRegistry
               type: Kubernetes
           infrastructure:
